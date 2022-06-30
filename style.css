@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('demo.jpg');
+    height: 100vh;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-position: top center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.6cm;
+    background-size: cover;
+    border-radius: 3px;
+}
+
+.heading{
+    
+    margin-left: 34%;
+    margin-right: 36%;
+    padding: 1rem;
+    margin-top: 8px;
+    text-align: center;
+    text-decoration: dotted;
+    border-radius: 14px;
+    font-size: 1.3em;
+    font-weight: 600;
+    color: #eee206;
+    
+    background: radial-gradient(ellipse at right bottom, #EEB1BF 5%, #d42dab 25%, #4d1d63 50%, #030243 100%);
+}
+
+.front {
+    
+    margin: 70px auto;
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 62%, rgba(120,80,50,1) 100%);
+    padding: 10px;
+    text-align: center;
+    border-radius: 30px;
+    width:25rem;
+    
+}
+
+.front > * {
+    margin-bottom: 50px;
+    
+}
+
+.data {
+    width: 100%;
+    background-color: rgb(52 196 204);
+    border: none;
+    outline: none;
+    color: #d6104f;
+    font-size: 2.5rem;
+    height: 50px;
+    border-radius: 5px;
+    padding: 0 10px;
+    text-align: center;
+}
+
+.data:focus {
+    background-color: rgb(170, 194, 80);
+}
+
+
+.weather-body {
+    
+    color: hsl(62, 93%, 50%);
+    padding: 20px;
+    line-height: 2rem;
+    border-radius: 10px;
+    background: rgb(45, 141, 82);
+    background: linear-gradient(0deg, rgb(248, 146, 3) 0%, rgba(44, 3, 245, 0.84) 100%);
+    height: 50vh;
+    -webkit-border-radius: 104% / 113%;
+
+}
+
+
+.location {
+    font-weight: bold;
+    margin-left: 15%;
+    margin-right: 14%;
+    padding: 1%;
+}
+
+.weather-status {
+    padding: 2%;
+}
+
+.temp {
+    font-size: 39pt;
+    font-weight: 600;
+    margin: 0.5em 0 0.2em 0;
+    color: cyan;
+    line-height: 0.6;
+    text-shadow: 2px 4px rgb(222 11 11 / 30%);
+}
+
+.min-max, .weather {
+    font-size: 12pt;
+    font-weight: 600;
+}
+.front .weather-body .floater .hume{
+    float: none;
+    margin-bottom: 1%;
+
+}
+
+.front .weather-body .floater p{
+    float: none;
+}
+
+
+ @media only screen and (min-device-width: 320px) and (max-device-width: 1347px) {
+    .heading{
+        width: 77%;
+        margin-left: 3rem;
+    }
+    .front{
+        width: 92%;
+        margin-left: 1rem;
+    }
+    .weather-body{
+        height: 46vh;
+        padding: 0px;
+    }
+ }
+
+ 
